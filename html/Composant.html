@@ -1,0 +1,229 @@
+<html class=ehtml lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    
+    <meta name="viewport" content="width=device-width">
+    
+    <title>Voituragogo-Confirmation</title>
+    
+    <link href="../style/main.css" rel="stylesheet" />
+
+    <link href="../style/commun.css" rel="stylesheet" />
+
+    <link href="../style/conf.css" rel="stylesheet" />
+
+    <link href="../style/comp.css" rel="stylesheet" />
+
+    <!-- Import de la police -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+       
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+        
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="police">
+        <h1>• Liste des polices</h1>
+        
+        <h1>Police : h1 - font-weight : 700</h1>
+       
+        <h2>Police : h2 - font-weight : 600</h2>
+       
+        <h3>Police : h3 - font-weight : 700</h3>
+       
+        <h4>Police : h4 - font-weight : 600</h4>
+       
+        <p>Police : p - font-weight : 400</p>
+    </div>
+
+    <div class="couleur">
+        <h1>• Liste des couleurs</h1>
+
+        <div class="couleurs">
+            <div class="un rond"></div>
+
+            <div class="deux rond"></div>
+
+            <div class="trois rond"></div>
+
+            <div class="quatres rond"></div>
+
+            <div class="cinq rond"></div>
+
+            <div class="six rond"></div>
+
+            <div class="sept rond"></div>
+
+            <div class="huit rond"></div>
+        </div>
+    </div>
+
+    <div class="case">
+        <h1>• Liste de case</h1>
+        
+        <h2>Case de voiture</h2>
+
+        <!-- Koenigsegg -->
+        <div class="box">
+            <div class="txt">
+                <h3>Koenigsegg</h3>
+
+                <p>Sport</p>
+            </div>
+
+            <div class="voit">
+
+                <img src="../img/Koenigsegg.svg" alt="voiture (Koenigsegg)"></img>
+                
+                <div class="cara">
+                    <div class="carabox">
+                        <div class="reserve"></div>
+
+                        <p>90L</p>
+                    </div>
+
+                    <div class="carabox">
+                        <div class="boite"></div>
+
+                        <p>Manuel</p>
+                    </div>
+
+                    <div class="carabox">
+                        <div class="place"></div>
+
+                        <p>2 places</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="louer">
+                <div class="prix">
+                    <h3>99€ /</h3>
+
+                    <p>jour</p>
+                </div>
+
+                <a href="../html/Composant.html"><p>Louer</p></a>
+            </div>
+        </div>
+
+        <h2>Case de résumé</h2>
+        
+        <!-- Case Résumé -->
+        <div class="box resum">
+            <div class="txt">
+                <h3>Résumé de la location</h3>        
+        
+                <p>Les prix peuvent changer selon la durée de la location et le prix de la voiture.</p>
+            </div>
+        
+            <div class="img"> 
+                <img src="../img/fondvoiture.png" alt="voiture (Nissan_GT-R)"></img>
+                
+                <h1>Nissan GT - R</h1>
+            </div>
+        
+            <div class="trait"></div>
+            
+            <div class="t-s">
+                <div class="sous">
+                    <p>Sous-total</p>
+                    
+                    <h3>80€</h3>
+                </div>
+                
+                <div class="taxes">
+                    <p>Taxes</p>
+                    
+                    <h3> 0€</h3>
+                </div>
+            </div>
+                
+            <div class="code">
+                <h3>Code promo</h3>
+                
+                <input type="text" name="code" placeholder="XXXXXX">
+                
+                <button class="applique" name="appliquer">Appliquer</button> 
+            </div>
+            
+            <div class="total">
+                <h3>Prix total</h3>
+                
+                <h1>80€</h1>
+            </div>
+                
+            <p>Prix total incluant les remises</p>        
+        </div>
+
+        <h1>• Formulaire</h1>
+
+        <form>
+
+        <h2>Case d'information</h2>    
+        
+        <!-- Case Informations -->
+        <div class="box info">
+            <div class="txt">
+                <h3>Informations personnelles</h3>
+        
+                <p>Merci de remplir cos informations personnelles</p>
+            </div>
+        
+            <div class="input">
+                <div class="hautg">
+                    <h4>Nom</h4>
+        
+                    <input class="Prenomnom" type="text" name="Nom" placeholder="Simon Strueux" required>
+                </div>
+        
+                <div class="basg">
+                    <h4>Adresse</h4>
+        
+                    <input class="Adresse" type="text" name="Adresse" placeholder="2 rue de la poésie" required>
+                </div>
+        
+                <div class="hautd">
+                    <h4>Numéro</h4>
+        
+                    <input class="Numéro" type="text" name="Numéro" placeholder="0123456789" required>
+                </div>
+        
+                <div class="basd">
+                    <h4>Ville</h4>
+        
+                    <input class="ville" type="text" name="ville" placeholder="Nantes" required>
+                </div>
+            </div>
+        </div>
+
+        <h2>Case de validation</h2>
+
+        <!-- Case de confirmation -->
+        <div class="box confirmation">
+            <div class="txt">
+                <h3>Confirmation</h3>
+
+                <p>Nous arrivons vers la fin. Juste quelques clics et votre location est prête !</p>    
+            </div>
+
+            <div class="checkboxtot">
+                <input class="checkbox" type="checkbox" name="offres">
+                    
+                <h4>J'accepte de recevoir des offres promotionnelles.</h4>
+            </div>
+                
+            <div class="checkboxtot">
+                <input class="checkbox" type="checkbox" name="conditions" required>
+
+                <h4>J'accepte les conditions de vente de la politique privée du site.</h4>
+            </div>
+
+            <button class="valid" type="submit">Louer</button>
+        </div>
+        </form>
+    </div>
+</body>
+

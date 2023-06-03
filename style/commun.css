@@ -1,0 +1,104 @@
+/*fond et variable*/
+html{
+	font-family:'Open sans';
+
+	background-color: #F6F7F9;
+
+	--color-blue: #3563E9;
+
+	--color-grey: #90A3BF;
+
+	--color-black: #1A202C;
+
+	--color-white: #FFFFFF;
+
+	--blackgrey: #596780;
+}
+
+/*Titre*/
+header{
+	margin: -1em -0.5em;
+
+	display: flex;
+
+	align-items: center;
+
+	background-color: var(--color-white);
+
+	height: 6em;
+
+	width: max;
+}
+
+/*Modification de la police*/
+h1{
+	line-height: 150%;
+
+	margin-left: 1.75em;
+
+	font-weight: 700;	
+
+	font-size: 32px;
+
+	color: var(--color-blue);
+}
+
+h2{
+	line-height: 150%;
+
+	margin-left: 2em;
+
+	font-weight: 600;
+
+	font-size: 24px;
+
+	color: var(--color-grey);
+}
+
+h3{
+	line-height: 150%;
+
+	font-weight: 700;
+		
+	font-size: 20px;
+
+	color: var(--color-black);
+}
+
+h4{
+	line-height: 150%;
+
+	font-weight: 600;
+
+	font-size: 16px;
+
+	color: var(--color-black);
+}
+
+p{
+	line-height: 150%;
+		
+	font-weight: 400;
+
+	font-size: 14px;
+
+	color: var(--color-grey);
+}
+
+/* Lien et placeholder */
+a{
+	text-decoration: none;
+}
+
+
+::placeholder{
+	line-height: 150%;
+		
+	font-weight: 400;
+
+	font-size: 14px;
+
+	color: var(--color-grey);
+}
+
+

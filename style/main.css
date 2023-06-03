@@ -1,0 +1,225 @@
+/*Mise en place de la page */
+.recom, .favorite{
+	margin-top: 3em;
+
+	font-weight: 600;
+}
+
+/*Disposition des Boites*/
+.voiture{
+	display: grid;
+
+	grid-template-columns: repeat( auto-fit, minmax(300px,1fr));
+
+	margin-left: 2em;
+
+	margin-right: 2em;
+}
+
+/* Disposition dans les boites */
+.box{
+	padding: 1em;
+
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: space-between;
+
+	margin-right: 1em;
+
+	margin-left: 1em;
+
+	border: 2px solid transparent;
+
+	margin-bottom: 2em;
+
+	height: 390px;
+
+	background: var(--color-white);
+
+	border-radius: 10px;
+}
+	/* Texte du titre des boites */
+	.txt p{
+		margin-top: -1em;
+
+		font-weight: 700;
+	}
+
+	/* Image et description de la voiture */
+	.voit{
+		display: flex;
+
+		flex-direction: column;
+	}
+
+		/* Image */
+		img{
+			width: max;	
+
+			height: 100px;
+
+			align-content: center;
+
+			margin-bottom: 2em;
+		}
+
+		/*position et disposition Caractéristique */
+		.cara{
+				margin-top: 1em;
+
+				display: flex;
+
+				justify-content: space-between;
+			}
+
+		.carabox{
+			display: inline-flex;
+		}
+
+			/* Reservoire, Boite et Place */
+			.reserve{
+				margin-top: 0.6em;
+
+				margin-right: 0.3em;
+
+				height: 21px;
+
+				width: 21px;
+
+				background-image: url(../img/Pompe.svg); 
+			}
+
+			.boite{
+				margin-top: 0.6em;
+
+				height: 24px;
+
+				width: 24px;
+
+				background-image: url(../img/Boite.svg);
+			}
+
+			.place{
+				margin-top: 0.6em;
+
+				height: 24px;
+
+				width: 24px;
+
+				background-image: url(../img/Place.svg);
+			}
+		
+		/*Prix + Bouton*/
+		.louer{
+			align-items: flex-end;
+
+			display: flex;
+
+			align-items: center;
+
+			justify-content: space-between;
+		}
+
+			/* Prix */
+			.prix{
+				display: inline-flex;
+			}
+
+				/* Texte prix */
+				.prix p{
+					margin-left: 0.5em;
+
+					margin-top: 1.6em;
+
+					font-weight: 700;
+				}
+			
+
+			/* Bouton */
+			.louer a{	
+				text-decoration: none;
+
+				background-color: var(--color-blue);
+
+				border: 1px solid transparent;
+
+				width: 71px;
+
+				height: 39px;
+
+				border-radius: 4px;
+			}
+
+					/* Texte bouton */
+					.louer a p{
+						font-weight: 600;
+				
+						box-sizing: border-box;
+
+						color: var(--color-white);
+
+						text-align: center;
+						
+						margin-top: 0.6em;
+					}	
+
+/*Format Telephone*/
+@media (max-width: 800px) {
+	.voiture{
+		display: grid;
+
+		grid-template-columns: repeat( 1, minmax(330px,1fr));
+
+		margin-left: 2em;
+
+		margin-right: 2em;
+	}
+
+	.voit{
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: space-between;
+	}
+
+	.box{
+		height: 240px;
+	}
+
+	.cara{
+		margin-top: -3em;
+
+		flex-direction: column;	
+
+		height: center;
+
+		align-content: flex-start;
+	}
+
+	img{
+		width: max;	
+
+		height: 65px;
+
+		margin-bottom: 2em;
+	}
+}
+
+/* Format Grand Écran */
+@media (min-width: 1200px){
+	.voiture{
+		grid-template-columns: repeat( 4, minmax(330px,1fr));
+	}
+
+	.recom  .voiture{
+		grid-template-rows: repeat(2, 1fr);
+	}
+
+	.ligne{
+		grid-row: 2;
+	}
+}
+

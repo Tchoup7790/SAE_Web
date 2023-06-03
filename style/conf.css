@@ -1,0 +1,410 @@
+/*Mise en page du formulaire*/
+main{
+	margin-top: 3em;
+
+	display: grid;
+
+	grid-template-columns: 2fr 1fr;
+}
+
+	/*position gauche*/
+	.gauche{
+		display: flex;
+		
+		flex-direction: column;
+
+		grid-column: 1;
+	}
+
+/* Case Formulaire */
+.box{
+	margin: 2em;
+
+	border: 2px solid transparent;
+
+	background: var(--color-white);
+
+	border-radius: 10px;
+}
+
+	/* position texte */
+	.txt{
+		margin-top: -1.7em;
+	}
+
+	/* position input */
+	.input{
+		display: grid;
+
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-rows: 1fr 1fr;
+
+		grid-column-gap: 4em;
+
+		box-sizing: border-box;
+	}
+
+		/* position des inputs dans la case */
+		.hautg{
+			display: flex;
+
+			flex-direction: column;
+
+			grid-column: 1;
+
+			grid-row: 1;
+		}
+
+		.basg{
+			display: flex;
+
+			flex-direction: column;
+
+			grid-column: 1;
+	
+			grid-row: 2;
+		}
+
+		.hautd{
+			display: flex;
+
+			flex-direction: column;
+
+			grid-row: 1;
+	
+			grid-column: 2;
+		}
+
+		.basd{
+			display: flex;
+
+			flex-direction: column;
+
+			grid-row: 2;
+
+			grid-column: 2;
+		}
+
+	/*forme input et bouton*/
+	input{
+		height: 53px;
+
+		padding: 1em 2em;
+
+		border: 1px solid var(--blackgrey);
+
+		border-radius: 10px;
+
+		background: var(--color-white);
+	}	
+
+	button{
+		width: 95px;
+	
+		text-decoration: none;
+	
+		background-color: var(--color-blue);
+	
+		border: 1px solid transparent;
+	
+		font-weight: 600;
+	
+		box-sizing: border-box;
+	
+		color: var(--color-white);
+	
+		border-radius: 4px;
+	}
+
+
+/*Case info*/
+.info{
+	padding: 2em;
+
+	height: 335px;
+}
+
+/*case location*/
+.location{
+	padding: 2em;
+
+	height: 665px;
+}
+
+	/* forme select */
+	select{
+		background: var(--color-white);
+
+		height: 53px;
+
+		padding: 1em 2em;
+
+		border: 1px solid var(--blackgrey);
+
+		border-radius: 10px;
+	}
+
+/*Case méthode*/
+.méthode{
+	display: flex;
+
+	flex-direction: column;
+
+	justify-content: space-between;
+
+	padding: 2em;
+
+	height: 600px;
+}
+
+	/* forme radio */
+	.radiobox{
+		background: #E0E9F4;
+
+		display: flex;
+
+		flex-direction: row;
+
+		justify-content: space-between;
+
+		padding-right: 1em;
+
+		border-radius: 10px;
+	}
+
+		/* Texte logo */
+		.radiobox .texte{
+			display: flex;
+	
+			gap: 0.5em;
+	
+			align-items: center;
+		}
+
+		/* Image logo */
+		.radiobox img{
+			padding: 1em;
+
+			height: 1.5em;
+
+			margin-top: 0.3em;
+		}
+
+	/* VISA	 */
+	.visa{
+		display: grid;
+
+		grid-template-columns: max-content max-content 1fr max-content;
+	}
+
+	/* Visa titre */
+	.visa h4{
+		margin-top: 1em;
+
+		margin-left: 0.5em;
+	}
+
+	.paiement{
+		display: none;
+	}  
+
+	.visa input:checked ~.paiement {
+		display: grid;
+
+		margin-top: -2.5em;
+
+		grid-column: 1/5;
+
+		grid-row: 2;
+
+		background: transparent;
+
+		grid-template-columns: 1fr 1fr;
+
+		grid-template-rows: 1fr 1fr;
+		
+		grid-column-gap: 4em;
+
+		box-sizing: border-box;
+
+		padding: 2em;
+
+		border-radius: 10px;
+	}
+
+/* Case Confirmation */
+.confirmation{
+	display: flex;
+
+	flex-direction: column;
+
+	padding: 2em;
+
+	height: 350px;
+}
+
+	/* Position des checkbox */
+	.checkboxtot{
+		display: inline-flex;
+	}
+
+		/* Forme des checkbox */
+		.checkbox{
+			margin-right: 1.5em;
+	
+			margin-top: 1.8em;
+	
+			color: var(--color-grey);
+	
+			height: 20px;
+	
+			width: 20px;
+		}	
+
+	/* forme du bouton de confirmation */
+	.confirmation button{
+		margin-top: 7.5em;
+
+		padding: 13px 24px;
+	}
+
+/* Case Resumé */
+.resum{
+	padding: 2em;
+
+	grid-column: 2;
+
+	height: 628px;
+
+	grid-row: 1;
+}
+
+	/* Forme image et nom */
+	.img{
+		display: flex;
+
+		flex-direction: row;
+	}
+
+	.img h1{
+		color: var(--color-black);
+	}
+
+	/* Trait de séparation */
+	.trait{
+		margin-top: 2em;
+
+		border:1px solid #C3D4E966;
+
+		width: 98%;
+
+		height: 0px
+	}
+
+	/* Taxes et Total */
+	.t-s{
+		display: flex;
+
+		flex-direction: column;
+
+		align-items: normal;
+	}
+		/* sous-total */
+		.sous{
+			display: flex;
+	
+			flex-direction: row;
+	
+			align-items: center;
+	
+			justify-content: space-between;
+		}
+
+		/* Taxes */
+		.taxes{
+			display: flex;
+	
+			flex-direction: row;
+	
+			align-items: center;
+	
+			justify-content: space-between;
+		}
+	
+	/* Code prommo */
+	.code{
+		display: flex;
+	
+		flex-direction: column;
+	}
+
+		/* Bouton applique */
+		.applique{
+			padding: 13px 24px 13px 14px;
+	
+			margin-top: 1em;
+	
+			border:1px solid var(--blackgrey);
+	
+			color: var(--color-black);
+		
+			background: var(--color-white);
+		}
+
+	/* Prix Total */
+	.total{
+		display: flex;
+
+		flex-direction: row;
+
+		align-items: center;
+
+		justify-content: space-between;
+	}
+
+		/* Position du texte */
+		.total h1{
+			color: var(--color-black);
+		}
+
+		.total ~ p{
+			margin-top: -2em;
+		}
+
+/*Format Telephone*/
+@media (max-width: 1200px) {
+	main{
+	margin-top: 3em;
+
+	display: grid;
+
+	grid-template-columns: 1fr;
+	}
+
+	.gauche{
+		display: flex;
+		
+		flex-direction: column;
+
+		grid-column: 1;
+	}
+	
+	.droite{
+		grid-row: 1;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
